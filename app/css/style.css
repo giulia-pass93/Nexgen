@@ -1,2 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .main {
-  color: black; }
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif; }
+  .main .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21333e;
+    height: 50px; }
+    .main .header .headerTopLeft a {
+      color: lightgrey;
+      text-decoration: none;
+      margin: 30px; }
+    .main .header .headerTopRight a {
+      color: lightgrey;
+      text-decoration: none;
+      margin: 30px; }
+  .main .mainMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 60px; }
+    .main .mainMenu .mainMenuLeft a {
+      text-decoration: none;
+      color: black;
+      margin: 30px; }
+    .main .mainMenu .mainMenuRight {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 30px; }
+      .main .mainMenu .mainMenuRight a {
+        text-decoration: none;
+        color: black;
+        margin: 30px; }
+      .main .mainMenu .mainMenuRight .mainMenuRightBtn {
+        background-color: #00a6a6;
+        border-radius: 5px;
+        height: 30px;
+        padding: 15px;
+        color: white; }
