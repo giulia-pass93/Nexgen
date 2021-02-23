@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+@mixin btnSlider{
+    #btn1{
+        background-color:#058283;
+        border-radius: 5px;
+        border: 0px;
+        padding: 15px;
+        color: white;
+        margin: 5px;
+    }
+    #btn2{
+        background-color:white;
+        border-radius: 5px;
+        border: 1px solid #058283; 
+        padding: 15px;
+        color: #058283;
+        margin: 5px;
+
+    }
+} 
+
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -12,21 +38,22 @@
         align-items: center;
         background-color: #21333e;
         height: 50px;
+        font-size: 13px;
 
         .headerTopLeft{
+            margin: 55px; 
            a{
             color: lightgrey;
             text-decoration: none;
-            margin: 30px
            }
         }
 
         .headerTopRight{
-
+            margin: 55px;
             a{
                 color: lightgrey;
                 text-decoration: none;
-                margin: 30px
+                margin-left: 30px;
             }
         }
     }
@@ -37,34 +64,125 @@
         justify-content: space-between;
         align-items: baseline;
         height: 60px;
+        margin: 15px 55px 40px 55px;
 
         .mainMenuLeft{
-            a{
-                text-decoration: none;
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: none;
+            font-weight:bolder;
+            letter-spacing: 4px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 1px;
+
+            #spanLeft{
+                color: #00a6a6;
+                background-color:#c6e9e9;
+                padding-left: 35px;
+                border-radius: 100px 0 0 100px;
+            }
+
+            #spanRight{
                 color: black;
-                margin: 30px
             }
         }
 
         .mainMenuRight{
             display: flex;
             flex-direction: row;
-            align-items: center;
-            margin: 30px;
+            align-items: baseline;
             
             a{
                 text-decoration: none;
                 color: black;
-                margin: 30px
+                margin: 20px
             }
 
             .mainMenuRightBtn{
-                background-color:#00a6a6;
+                background-color:#058283;
                 border-radius: 5px;
-                height: 30px;
+                height: 15px;
+                line-height: 15px;
                 padding: 15px;
                 color: white;
             }
+        }
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+
+        #btn1{
+            margin: 5px;
+            height: 15px;
+            width: 35px;
+
+        }
+
+        #btn1:focus{
+            background-color:#058283 ;
+        }
+
+        #btn2{
+            margin: 5px;
+            height: 15px;
+            width: 35px;
+        }
+        #btn2:focus{
+            background-color:#058283 ;
+        }
+
+        #btn3{
+            margin: 5px;
+            height: 15px;
+            width: 35px;
+        }
+        #btn3:focus{
+            background-color:#058283 ;
+        }
+    }
+
+    #spanLeftDiv1{
+        color:#00a6a6 ;
+    }
+    #spanRightDiv1{
+        color:black ;
+    }
+
+    .classDiv1{
+        text-align: left;
+        width: 50%;
+        margin-left: 80px;
+        margin-top: 30px;
+
+        .divTest{
+            width: 50%;
+            @include btnSlider();
+        }
+    }
+
+    .classDiv2{
+        text-align: center;
+        @include btnSlider();
+        
+    }
+
+    .classDiv3{
+        margin-right: 80px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 50%;
+        
+        .divTest{
+            width: 50%;
+            @include btnSlider();       
+        }
+
+        .divImg{
+            width: 50%;
         }
     }
 }

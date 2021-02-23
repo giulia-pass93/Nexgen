@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%; }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -9,37 +14,140 @@
     justify-content: space-between;
     align-items: center;
     background-color: #21333e;
-    height: 50px; }
-    .main .header .headerTopLeft a {
-      color: lightgrey;
-      text-decoration: none;
-      margin: 30px; }
-    .main .header .headerTopRight a {
-      color: lightgrey;
-      text-decoration: none;
-      margin: 30px; }
+    height: 50px;
+    font-size: 13px; }
+    .main .header .headerTopLeft {
+      margin: 55px; }
+      .main .header .headerTopLeft a {
+        color: lightgrey;
+        text-decoration: none; }
+    .main .header .headerTopRight {
+      margin: 55px; }
+      .main .header .headerTopRight a {
+        color: lightgrey;
+        text-decoration: none;
+        margin-left: 30px; }
   .main .mainMenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    height: 60px; }
-    .main .mainMenu .mainMenuLeft a {
+    height: 60px;
+    margin: 15px 55px 40px 55px; }
+    .main .mainMenu .mainMenuLeft {
+      display: flex;
+      justify-content: flex-end;
       text-decoration: none;
-      color: black;
-      margin: 30px; }
+      font-weight: bolder;
+      letter-spacing: 4px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 1px; }
+      .main .mainMenu .mainMenuLeft #spanLeft {
+        color: #00a6a6;
+        background-color: #c6e9e9;
+        padding-left: 35px;
+        border-radius: 100px 0 0 100px; }
+      .main .mainMenu .mainMenuLeft #spanRight {
+        color: black; }
     .main .mainMenu .mainMenuRight {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      margin: 30px; }
+      align-items: baseline; }
       .main .mainMenu .mainMenuRight a {
         text-decoration: none;
         color: black;
-        margin: 30px; }
+        margin: 20px; }
       .main .mainMenu .mainMenuRight .mainMenuRightBtn {
-        background-color: #00a6a6;
+        background-color: #058283;
         border-radius: 5px;
-        height: 30px;
+        height: 15px;
+        line-height: 15px;
         padding: 15px;
         color: white; }
+  .main .buttons {
+    display: flex;
+    justify-content: center; }
+    .main .buttons #btn1 {
+      margin: 5px;
+      height: 15px;
+      width: 35px; }
+    .main .buttons #btn1:focus {
+      background-color: #058283; }
+    .main .buttons #btn2 {
+      margin: 5px;
+      height: 15px;
+      width: 35px; }
+    .main .buttons #btn2:focus {
+      background-color: #058283; }
+    .main .buttons #btn3 {
+      margin: 5px;
+      height: 15px;
+      width: 35px; }
+    .main .buttons #btn3:focus {
+      background-color: #058283; }
+  .main #spanLeftDiv1 {
+    color: #00a6a6; }
+  .main #spanRightDiv1 {
+    color: black; }
+  .main .classDiv1 {
+    text-align: left;
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 30px; }
+    .main .classDiv1 .divTest {
+      width: 50%; }
+      .main .classDiv1 .divTest #btn1 {
+        background-color: #058283;
+        border-radius: 5px;
+        border: 0px;
+        padding: 15px;
+        color: white;
+        margin: 5px; }
+      .main .classDiv1 .divTest #btn2 {
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid #058283;
+        padding: 15px;
+        color: #058283;
+        margin: 5px; }
+  .main .classDiv2 {
+    text-align: center; }
+    .main .classDiv2 #btn1 {
+      background-color: #058283;
+      border-radius: 5px;
+      border: 0px;
+      padding: 15px;
+      color: white;
+      margin: 5px; }
+    .main .classDiv2 #btn2 {
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid #058283;
+      padding: 15px;
+      color: #058283;
+      margin: 5px; }
+  .main .classDiv3 {
+    margin-right: 80px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 50%; }
+    .main .classDiv3 .divTest {
+      width: 50%; }
+      .main .classDiv3 .divTest #btn1 {
+        background-color: #058283;
+        border-radius: 5px;
+        border: 0px;
+        padding: 15px;
+        color: white;
+        margin: 5px; }
+      .main .classDiv3 .divTest #btn2 {
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid #058283;
+        padding: 15px;
+        color: #058283;
+        margin: 5px; }
+    .main .classDiv3 .divImg {
+      width: 50%; }

@@ -4,11 +4,11 @@ const header=document.getElementsByClassName("header")[0];
 const mainMenu=document.getElementsByClassName("mainMenu")[0];
 
 const headerTopObject=[{ 
-    name:"orari",
+    name:"Open Hours: Mon - Sat - 9:00 - 18:00",
     url:"www."},
-  { name:"telefono",
+  { name:"+1 (305) 1234-5678",
     url:"www."},
-  { name:"mail",
+  { name:"hello@example.com",
     url:"www."},
   { name:"facebook",
     url:"www."},
@@ -17,9 +17,7 @@ const headerTopObject=[{
   { name:"instagram",
     url:"www."}];
 
-const mainMenuObject=[{
-    name:"NEXGEN",
-    url:"www."},
+const mainMenuObject=[
   { name:"HOME",
     url:"www."},
   { name:"SERVICES",
@@ -40,19 +38,27 @@ header.appendChild(headerTopLeft);
 //Header Destra
 const headerTopRight=document.createElement("div");
 headerTopRight.classList.add("headerTopRight");
-generateMenu(headerTopObject.splice(1,5), headerTopRight);
+generateMenu(headerTopObject.splice(0,5), headerTopRight);
 header.appendChild(headerTopRight);
 
 //Menu Main Sinistra
 const mainMenuLeft=document.createElement("div");
 mainMenuLeft.classList.add("mainMenuLeft");
-generateMenu(mainMenuObject.splice(0,1), mainMenuLeft);
+const spanLeft= document.createElement("span");
+const spanRight= document.createElement("span");
+spanLeft.innerHTML='NEX';
+spanLeft.id='spanLeft';
+spanRight.innerHTML='GEN';
+spanRight.id='spanRight';
+mainMenuLeft.appendChild(spanLeft);
+mainMenuLeft.appendChild(spanRight);
+mainMenuLeft.href='www.';
 mainMenu.appendChild(mainMenuLeft);
 
 // Menu Main Destra
 const mainMenuRight=document.createElement("div");
 mainMenuRight.classList.add("mainMenuRight");
-generateMenu(mainMenuObject.splice(1,4), mainMenuRight);
+generateMenu(mainMenuObject, mainMenuRight);
 
 //Bottone Menu Main Destra
 const mainMenuRightBtn=document.createElement("div");
