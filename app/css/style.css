@@ -1,153 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 body {
-  margin: 0px;
-  height: 100%;
-  width: 100%; }
+  margin: 0px; }
 
 .main {
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif; }
-  .main .header {
+  .main header .navBarTop {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #21333e;
     height: 50px;
-    font-size: 13px; }
-    .main .header .headerTopLeft {
+    font-size: 16px; }
+    .main header .navBarTop .navBarTopLeft {
       margin: 55px; }
-      .main .header .headerTopLeft a {
-        color: lightgrey;
-        text-decoration: none; }
-    .main .header .headerTopRight {
-      margin: 55px; }
-      .main .header .headerTopRight a {
+      .main header .navBarTop .navBarTopLeft a {
         color: lightgrey;
         text-decoration: none;
-        margin-left: 30px; }
-  .main .mainMenu {
+        margin: 15px; }
+    .main header .navBarTop .navBarTopRight {
+      margin: 55px; }
+      .main header .navBarTop .navBarTopRight a {
+        color: lightgrey;
+        text-decoration: none;
+        margin: 15px; }
+  .main header .navBarBottom {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    height: 60px;
-    margin: 15px 55px 40px 55px; }
-    .main .mainMenu .mainMenuLeft {
-      display: flex;
-      justify-content: flex-end;
-      text-decoration: none;
-      font-weight: bolder;
-      letter-spacing: 4px;
-      height: 40px;
-      line-height: 40px;
-      border-radius: 1px; }
-      .main .mainMenu .mainMenuLeft #spanLeft {
-        color: #00a6a6;
-        background-color: #c6e9e9;
-        padding-left: 35px;
-        border-radius: 100px 0 0 100px; }
-      .main .mainMenu .mainMenuLeft #spanRight {
-        color: black; }
-    .main .mainMenu .mainMenuRight {
+    width: 100%; }
+    .main header .navBarBottom .navBarBottomMenu {
       display: flex;
       flex-direction: row;
-      align-items: baseline; }
-      .main .mainMenu .mainMenuRight a {
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: baseline;
+      width: 100%;
+      padding: 20px 50px 0px 50px; }
+      .main header .navBarBottom .navBarBottomMenu .logo {
+        display: flex;
+        justify-content: flex-end;
         text-decoration: none;
-        color: black;
-        margin: 20px; }
-      .main .mainMenu .mainMenuRight .mainMenuRightBtn {
-        background-color: #058283;
-        border-radius: 5px;
-        height: 15px;
-        line-height: 15px;
-        padding: 15px;
-        color: white; }
-  .main .buttons {
-    display: flex;
-    justify-content: center; }
-    .main .buttons #btn1 {
-      margin: 5px;
-      height: 15px;
-      width: 35px; }
-    .main .buttons #btn1:focus {
-      background-color: #058283; }
-    .main .buttons #btn2 {
-      margin: 5px;
-      height: 15px;
-      width: 35px; }
-    .main .buttons #btn2:focus {
-      background-color: #058283; }
-    .main .buttons #btn3 {
-      margin: 5px;
-      height: 15px;
-      width: 35px; }
-    .main .buttons #btn3:focus {
-      background-color: #058283; }
-  .main #spanLeftDiv1 {
-    color: #00a6a6; }
-  .main #spanRightDiv1 {
-    color: black; }
-  .main .classDiv1 {
-    text-align: left;
-    width: 50%;
-    margin-left: 80px;
-    margin-top: 30px; }
-    .main .classDiv1 .divTest {
-      width: 50%; }
-      .main .classDiv1 .divTest #btn1 {
-        background-color: #058283;
-        border-radius: 5px;
-        border: 0px;
-        padding: 15px;
-        color: white;
-        margin: 5px; }
-      .main .classDiv1 .divTest #btn2 {
-        background-color: white;
-        border-radius: 5px;
-        border: 1px solid #058283;
-        padding: 15px;
-        color: #058283;
-        margin: 5px; }
-  .main .classDiv2 {
-    text-align: center; }
-    .main .classDiv2 #btn1 {
-      background-color: #058283;
-      border-radius: 5px;
-      border: 0px;
-      padding: 15px;
-      color: white;
-      margin: 5px; }
-    .main .classDiv2 #btn2 {
-      background-color: white;
-      border-radius: 5px;
-      border: 1px solid #058283;
-      padding: 15px;
-      color: #058283;
-      margin: 5px; }
-  .main .classDiv3 {
-    margin-right: 80px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 50%; }
-    .main .classDiv3 .divTest {
-      width: 50%; }
-      .main .classDiv3 .divTest #btn1 {
-        background-color: #058283;
-        border-radius: 5px;
-        border: 0px;
-        padding: 15px;
-        color: white;
-        margin: 5px; }
-      .main .classDiv3 .divTest #btn2 {
-        background-color: white;
-        border-radius: 5px;
-        border: 1px solid #058283;
-        padding: 15px;
-        color: #058283;
-        margin: 5px; }
-    .main .classDiv3 .divImg {
-      width: 50%; }
+        font-weight: 700;
+        font-size: 19.2px;
+        letter-spacing: 5px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 1px; }
+        .main header .navBarBottom .navBarBottomMenu .logo #spanLeft {
+          color: #00a6a6;
+          background-color: #c6e9e9;
+          padding-left: 35px;
+          border-radius: 100px 0 0 100px; }
+        .main header .navBarBottom .navBarBottomMenu .logo #spanRight {
+          color: #21333e; }
+      .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline; }
+        .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight a {
+          text-decoration: none;
+          color: #21333e;
+          font-weight: 500;
+          font-size: 16px;
+          margin: 20px; }
+        .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight .navBarBottomMenuRightBtn {
+          padding: 15px;
+          margin: 5px;
+          border-radius: 5px;
+          border: 0px;
+          background-color: #058283;
+          color: white; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1; }
+
+@media screen and (max-width: 1040px) {
+  .main .sfondo .navBarTop {
+    display: none; }
+  .main .sfondo .navBarBottom .navBarBottomMenu .navBarBottomMenuRight {
+    display: none; } }

@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+body {
+  margin: 0px; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif; }
+  .main header .navBarTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21333e;
+    height: 50px;
+    font-size: 16px; }
+    .main header .navBarTop .navBarTopLeft {
+      margin: 55px; }
+      .main header .navBarTop .navBarTopLeft a {
+        color: lightgrey;
+        text-decoration: none;
+        margin: 15px; }
+    .main header .navBarTop .navBarTopRight {
+      margin: 55px; }
+      .main header .navBarTop .navBarTopRight a {
+        color: lightgrey;
+        text-decoration: none;
+        margin: 15px; }
+  .main header .navBarBottom {
+    display: flex;
+    width: 100%; }
+    .main header .navBarBottom .navBarBottomMenu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: baseline;
+      width: 100%;
+      padding: 20px 50px 0px 50px; }
+      .main header .navBarBottom .navBarBottomMenu .logo {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 19.2px;
+        letter-spacing: 5px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 1px; }
+        .main header .navBarBottom .navBarBottomMenu .logo #spanLeft {
+          color: #00a6a6;
+          background-color: #c6e9e9;
+          padding-left: 35px;
+          border-radius: 100px 0 0 100px; }
+        .main header .navBarBottom .navBarBottomMenu .logo #spanRight {
+          color: #21333e; }
+      .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline; }
+        .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight a {
+          text-decoration: none;
+          color: #21333e;
+          font-weight: 500;
+          font-size: 16px;
+          margin: 20px; }
+        .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight .navBarBottomMenuRightBtn {
+          padding: 15px;
+          margin: 5px;
+          border-radius: 5px;
+          border: 0px;
+          background-color: #058283;
+          color: white; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1; }
+
+@media screen and (max-width: 1040px) {
+  .main .sfondo .navBarTop {
+    display: none; }
+  .main .sfondo .navBarBottom .navBarBottomMenu .navBarBottomMenuRight {
+    display: none; } }
+
+body {
+  margin: 0px; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif; }
+  .main header .navBarTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21333e;
+    height: 50px;
+    font-size: 16px; }
+    .main header .navBarTop .navBarTopLeft {
+      margin: 55px; }
+      .main header .navBarTop .navBarTopLeft a {
+        color: lightgrey;
+        text-decoration: none;
+        margin: 15px; }
+    .main header .navBarTop .navBarTopRight {
+      margin: 55px; }
+      .main header .navBarTop .navBarTopRight a {
+        color: lightgrey;
+        text-decoration: none;
+        margin: 15px; }
+  .main header .navBarBottom {
+    display: flex;
+    width: 100%; }
+    .main header .navBarBottom .navBarBottomMenu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: baseline;
+      width: 100%;
+      padding: 20px 50px 0px 50px; }
+      .main header .navBarBottom .navBarBottomMenu .logo {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 19.2px;
+        letter-spacing: 5px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 1px; }
+        .main header .navBarBottom .navBarBottomMenu .logo #spanLeft {
+          color: #00a6a6;
+          background-color: #c6e9e9;
+          padding-left: 35px;
+          border-radius: 100px 0 0 100px; }
+        .main header .navBarBottom .navBarBottomMenu .logo #spanRight {
+          color: #21333e; }
+      .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline; }
+        .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight a {
+          text-decoration: none;
+          color: #21333e;
+          font-weight: 500;
+          font-size: 16px;
+          margin: 20px; }
+        .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight .navBarBottomMenuRightBtn {
+          padding: 15px;
+          margin: 5px;
+          border-radius: 5px;
+          border: 0px;
+          background-color: #058283;
+          color: white; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1; }
+
+@media screen and (max-width: 1040px) {
+  .main .sfondo .navBarTop {
+    display: none; }
+  .main .sfondo .navBarBottom .navBarBottomMenu .navBarBottomMenuRight {
+    display: none; } }
+
+@keyframes buttons {
+  from {
+    bottom: -50%;
+    opacity: 0; }
+  to {
+    bottom: 0px;
+    opacity: 1; } }
+
+@keyframes text {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+
+.titolo {
+  animation: text 0.4s;
+  animation-timing-function: ease; }
+
+.sottoTitolo {
+  animation: text 0.4s;
+  animation-delay: 0.8s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards; }
+
+.divButtons {
+  position: relative;
+  animation: buttons 1s;
+  animation-delay: 1.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards; }
+
+.main .divButtonsSliders {
+  cursor: w-resize;
+  height: 100vh;
+  padding: 0px 60px 0px 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+
+.main .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 3%; }
+  .main .buttons .bottone {
+    margin-bottom: 5px;
+    height: 35px;
+    width: 10px;
+    border-radius: 10px;
+    border: 1px solid #058283;
+    background-color: transparent;
+    margin: 7.5px;
+    opacity: 0.5;
+    cursor: pointer; }
+    .main .buttons .bottone:focus {
+      background-color: #058283; }
+
+.main .slider {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 100px;
+  width: 98%;
+  height: 100%; }
+
+.main .titolo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+  line-height: 86.4px;
+  position: relative; }
+  .main .titolo #spanLeft {
+    color: #21333e; }
+  .main .titolo #spanRight {
+    color: #00a6a6;
+    background-color: #c6e9e9;
+    padding: 5px 10px 5px 10px; }
+
+.main .sottoTitolo {
+  color: #606d75;
+  font-size: 19.2px; }
+
+.main .classDiv1 {
+  width: 100%;
+  display: flex;
+  text-align: left; }
+  .main .classDiv1 .divTest {
+    width: 50%; }
+    .main .classDiv1 .divTest .btnSlider1 {
+      padding: 15px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 0px;
+      background-color: #058283;
+      color: white; }
+    .main .classDiv1 .divTest .btnSlider2 {
+      padding: 15px;
+      margin: 5px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid #058283;
+      color: #058283; }
+
+.main .classDiv2 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  .main .classDiv2 .divTest {
+    width: 60%;
+    font-size: 19.2px;
+    font-weight: 400; }
+    .main .classDiv2 .divTest .btnSlider1 {
+      padding: 15px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 0px;
+      background-color: #058283;
+      color: white; }
+    .main .classDiv2 .divTest .btnSlider2 {
+      padding: 15px;
+      margin: 5px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid #058283;
+      color: #058283; }
+
+.main .classDiv3 {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  flex-direction: row-reverse; }
+  .main .classDiv3 .divTest {
+    width: 50%; }
+    .main .classDiv3 .divTest .btnSlider1 {
+      padding: 15px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 0px;
+      background-color: #058283;
+      color: white; }
+    .main .classDiv3 .divTest .btnSlider2 {
+      padding: 15px;
+      margin: 5px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid #058283;
+      color: #058283; }
+
+@media screen and (max-width: 990px) {
+  .main .sfondo .divButtonsSliders .slider .titolo {
+    font-size: 60px; } }
+
+@media screen and (max-width: 760px) {
+  .main .sfondo .divButtonsSliders .slider .divTest {
+    width: 70%; }
+    .main .sfondo .divButtonsSliders .slider .divTest .titolo {
+      font-size: 50px; }
+    .main .sfondo .divButtonsSliders .slider .divTest .sottoTitolo {
+      font-size: 17px;
+      text-align: left;
+      font-weight: 200; } }
+
+@media screen and (max-width: 649px) {
+  .main .sfondo .divButtonsSliders .slider .divTest {
+    width: 75%; } }
+
+@media screen and (max-width: 615px) {
+  .main .sfondo .divButtonsSliders .slider .divTest {
+    width: 78%; } }
+
+@media screen and (max-width: 600px) {
+  .main .sfondo .divButtonsSliders .slider .divTest {
+    width: 85%; }
+    .main .sfondo .divButtonsSliders .slider .divTest .titolo {
+      font-size: 45px; }
+    .main .sfondo .divButtonsSliders .slider .divTest .sottoTitolo {
+      font-size: 13px;
+      text-align: left;
+      font-weight: 200; } }
+
+@media screen and (max-width: 520px) {
+  .main .sfondo .divButtonsSliders {
+    padding: 0px 30px 0px 30px; }
+    .main .sfondo .divButtonsSliders .slider .divTest {
+      width: 90%; } }
+
+@media screen and (max-width: 455px) {
+  .main .sfondo .divButtonsSliders .slider .divTest {
+    width: 95%; } }
+
+@media screen and (max-width: 355px) {
+  .main .sfondo .divButtonsSliders .slider .divTest {
+    width: 85%; }
+    .main .sfondo .divButtonsSliders .slider .divTest .titolo {
+      font-size: 35px; }
+    .main .sfondo .divButtonsSliders .slider .divTest .sottoTitolo {
+      font-size: 12px;
+      text-align: left;
+      font-weight: 150; } }
+
+@media screen and (max-width: 322px) {
+  .main .sfondo .divButtonsSliders .slider .divTest .titolo {
+    font-size: 25px;
+    line-height: normal; } }
+
+.businessArea {
+  z-index: 1;
+  background-color: #eef4ed; }
+  .businessArea .topSectionBusinessArea {
+    padding: 130px 46.6667px 130px 46.6667px; }
+    .businessArea .topSectionBusinessArea .testoBusinessArea .spanBusinessArea {
+      width: fit-content;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 13.6px;
+      color: #00a6a6; }
+    .businessArea .topSectionBusinessArea .testoBusinessArea .titoloBusinessArea {
+      font-family: 'Poppins', sans-serif;
+      font-size: 48px; }
+      .businessArea .topSectionBusinessArea .testoBusinessArea .titoloBusinessArea #spanLeft {
+        color: #21333e; }
+      .businessArea .topSectionBusinessArea .testoBusinessArea .titoloBusinessArea #spanRight {
+        color: #00a6a6;
+        background-color: #c6e9e9;
+        padding: 5px 10px 5px 10px; }

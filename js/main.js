@@ -1,7 +1,7 @@
 function bodyGenerator(){
 
-const header=document.getElementsByClassName("header")[0];
-const mainMenu=document.getElementsByClassName("mainMenu")[0];
+const header=document.getElementsByClassName("navBarTop")[0];
+const navBarBottomMenu=document.getElementsByClassName("navBarBottomMenu")[0];
 
 const headerTopObject=[{ 
     name:"Open Hours: Mon - Sat - 9:00 - 18:00",
@@ -29,45 +29,61 @@ const mainMenuObject=[
   { name:"RESULTS",
     url:"www."}];
 
-//Header Sinistra
+//navBarTop Sinistra
 const headerTopLeft=document.createElement("div");
-headerTopLeft.classList.add("headerTopLeft");
+headerTopLeft.classList.add("navBarTopLeft");
 generateMenu(headerTopObject.splice(0,1), headerTopLeft);
 header.appendChild(headerTopLeft);
 
-//Header Destra
+//navBarTop Destra
 const headerTopRight=document.createElement("div");
-headerTopRight.classList.add("headerTopRight");
+headerTopRight.classList.add("navBarTopRight");
 generateMenu(headerTopObject.splice(0,5), headerTopRight);
 header.appendChild(headerTopRight);
 
-//Menu Main Sinistra
-const mainMenuLeft=document.createElement("div");
-mainMenuLeft.classList.add("mainMenuLeft");
+//navBarBottom 
+
+window.onscroll = function() {fixedNav()};
+
+var navBar=document.getElementsByClassName('navBarBottom')[0];
+var sticky = navBar.offsetTop;
+
+function fixedNav(){
+  if(window.pageYOffset >= sticky){
+    navBar.classList.add('sticky');
+  }
+  else {
+    navBar.classList.remove('sticky');
+  }
+}
+
+//Logo
+const navBarBottomMenuLeft=document.createElement("div");
+navBarBottomMenuLeft.classList.add("logo");
 const spanLeft= document.createElement("span");
 const spanRight= document.createElement("span");
 spanLeft.innerHTML='NEX';
 spanLeft.id='spanLeft';
 spanRight.innerHTML='GEN';
 spanRight.id='spanRight';
-mainMenuLeft.appendChild(spanLeft);
-mainMenuLeft.appendChild(spanRight);
-mainMenuLeft.href='www.';
-mainMenu.appendChild(mainMenuLeft);
+navBarBottomMenuLeft.appendChild(spanLeft);
+navBarBottomMenuLeft.appendChild(spanRight);
+navBarBottomMenuLeft.href='www.';
+navBarBottomMenu.appendChild(navBarBottomMenuLeft);
 
-// Menu Main Destra
-const mainMenuRight=document.createElement("div");
-mainMenuRight.classList.add("mainMenuRight");
-generateMenu(mainMenuObject, mainMenuRight);
+//navBarBottom Destra
+const navBarBottomMenuRight=document.createElement("div");
+navBarBottomMenuRight.classList.add("navBarBottomMenuRight");
+generateMenu(mainMenuObject, navBarBottomMenuRight);
 
-//Bottone Menu Main Destra
-const mainMenuRightBtn=document.createElement("div");
-mainMenuRightBtn.classList.add("mainMenuRightBtn");
-mainMenuRightBtn.innerHTML='GET IN TOUCH';
-mainMenuRightBtn.href="www.";
-mainMenuRight.appendChild(mainMenuRightBtn);
+//navBarBottom Bottone Destra
+const navBarBottomMenuRightBtn=document.createElement("div");
+navBarBottomMenuRightBtn.classList.add("navBarBottomMenuRightBtn");
+navBarBottomMenuRightBtn.innerHTML='GET IN TOUCH';
+navBarBottomMenuRightBtn.href="www.";
+navBarBottomMenuRight.appendChild(navBarBottomMenuRightBtn);
 
-mainMenu.appendChild(mainMenuRight);
+navBarBottomMenu.appendChild(navBarBottomMenuRight);
 
 
 function generateMenu(array, parent){
