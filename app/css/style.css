@@ -1,2 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+body {
+  margin: 0px; }
+
 .main {
-  color: black; }
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif; }
+  .main header .navBarTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21333e;
+    height: 50px;
+    font-size: 16px; }
+    .main header .navBarTop .navBarTopLeft {
+      margin: 55px; }
+      .main header .navBarTop .navBarTopLeft a {
+        color: lightgrey;
+        text-decoration: none;
+        margin: 15px; }
+    .main header .navBarTop .navBarTopRight {
+      margin: 55px; }
+      .main header .navBarTop .navBarTopRight a {
+        color: lightgrey;
+        text-decoration: none;
+        margin: 15px; }
+  .main header .navBarBottom {
+    display: flex;
+    width: 100%; }
+    .main header .navBarBottom .navBarBottomMenu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      vertical-align: baseline;
+      width: 100%;
+      padding: 20px 50px 0px 50px; }
+      .main header .navBarBottom .navBarBottomMenu .logo {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 19.2px;
+        letter-spacing: 5px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 1px; }
+        .main header .navBarBottom .navBarBottomMenu .logo #spanLeft {
+          color: #00a6a6;
+          background-color: #c6e9e9;
+          padding-left: 35px;
+          border-radius: 100px 0 0 100px; }
+        .main header .navBarBottom .navBarBottomMenu .logo #spanRight {
+          color: #21333e; }
+      .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline; }
+        .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight a {
+          text-decoration: none;
+          color: #21333e;
+          font-weight: 500;
+          font-size: 16px;
+          margin: 20px; }
+        .main header .navBarBottom .navBarBottomMenu .navBarBottomMenuRight .navBarBottomMenuRightBtn {
+          padding: 15px;
+          margin: 5px;
+          border-radius: 5px;
+          border: 0px;
+          background-color: #058283;
+          color: white; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 1; }
+
+@media screen and (max-width: 1040px) {
+  .main .sfondo .navBarTop {
+    display: none; }
+  .main .sfondo .navBarBottom .navBarBottomMenu .navBarBottomMenuRight {
+    display: none; } }

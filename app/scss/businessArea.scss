@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import 'style';
+@import 'slider';
+
+.businessArea{
+    z-index: 1;
+   background-color:rgb(238, 244, 237); 
+   .topSectionBusinessArea{
+        padding: 130px 46.6667px 130px 46.6667px;
+
+       .testoBusinessArea{
+
+           .spanBusinessArea{
+                width: fit-content;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 13.6px;
+                color: $light-color-primary;
+           }
+
+           .titoloBusinessArea{
+                font-family: 'Poppins', sans-serif;
+                font-size: 48px;
+
+                #spanLeft{
+                    color:$dark-color-primary ;
+                }
+                #spanRight{
+                    @include testoEvidenziato;
+                    padding: 5px 10px 5px 10px;
+                }
+           }
+       }
+   }
+}

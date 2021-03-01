@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import 'style';
+@import 'mixin&variable';
+@import 'animation';
+
+
+
+.main{
+
+    .divButtonsSliders{
+
+        cursor: w-resize;
+        height: 100vh;
+        padding:0px 60px 0px 70px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+
+    .buttons{
+        @include displayColumn;
+        align-items: flex-end;
+        width: 3%;
+
+        .bottone{
+            @include btnSelezioneSliders;
+            &:focus{
+                @include btnSelezioneSlidersFocus;
+            }
+        }
+    }
+
+    .slider{
+        display: flex;
+        align-items: flex-start;
+        padding-top: 100px;
+
+        width: 98%;
+        height: 100%;
+
+    }
+
+    .titolo{
+        font-family: 'Poppins', sans-serif;
+        font-size: 70px;
+        line-height: 86.4px;
+        position: relative;
+
+        #spanLeft{
+            color:$dark-color-primary ;
+        }
+        #spanRight{
+            @include testoEvidenziato;
+            padding: 5px 10px 5px 10px;
+        }
+    }
+
+    .sottoTitolo{
+        color: rgb(96, 109, 117);
+        font-size: 19.2px;
+    }
+
+    .classDiv1{
+        @include divSliders; 
+    }
+
+    .classDiv2{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        .divTest{
+            width: 60%;
+            font-size: 19.2px;
+            font-weight: 400;
+            @include btnSlider;
+        }
+    }
+
+    .classDiv3{  
+        @include divSliders;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                .slider{
+                    .titolo{
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                .slider{
+                    .divTest{
+                        width: 70%;
+                        .titolo{
+                            font-size: 50px;
+                        }
+                        .sottoTitolo{
+                            font-size: 17px;
+                            text-align: left;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 649px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                .slider{
+                    .divTest{
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 615px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                .slider{
+                    .divTest{
+                        width: 78%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                .slider{
+                    .divTest{
+                        width: 85%;
+                        .titolo{
+                            font-size: 45px;
+                        }
+                        .sottoTitolo{
+                            font-size: 13px;
+                            text-align: left;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                padding: 0px 30px 0px 30px;
+                .slider{
+                    .divTest{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 455px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                .slider{
+                    .divTest{
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 355px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                .slider{
+                    .divTest{
+                        width: 85%;
+                        .titolo{
+                            font-size: 35px;
+                        }
+                        .sottoTitolo{
+                            font-size: 12px;
+                            text-align: left;
+                            font-weight: 150;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 322px){
+    .main{
+        .sfondo{
+            .divButtonsSliders{
+                .slider{
+                    .divTest{
+                        .titolo{
+                            font-size: 25px;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

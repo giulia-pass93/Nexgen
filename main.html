@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexgen</title>
+
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="app/css/slider.css">
+    <link rel="stylesheet" href="app/css/businessArea.css">
+
+    <script script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/slider.js" type="text/javascript"></script>
+    <script src="./js/costruzioneSliders.js" type="text/javascript"></script>
+
 </head>
-<body>
-    <div class="main">Prova</div>
+<body id="body">
+    <div class="main" id="main">
+        <div id="sfondo" class="sfondo">
+            <header>
+                <nav class="navBarTop">
+            
+                </nav>
+
+                <nav class="navBarBottom">
+                    <div class="navBarBottomMenu">
+                    
+                    </div>
+                </nav>
+            </header>
+
+            <div class='divButtonsSliders'>
+
+                <div class="buttons">
+                    <button id="btn1" class="bottone" onclick="mostraDiv(id)"></button>
+                    <button id="btn2" class="bottone" autofocus onclick="mostraDiv(id)"></button>
+                    <button id="btn3" class="bottone" onclick="mostraDiv(id)"></button>
+                </div>
+                
+                <div id="slider" class="slider">
+                    <script>
+                        generaDiv(
+                            'classDiv2',
+                            'btn2',
+                            'Ready ', 
+                            'Team',
+                            'No matter what your company needs, we will be ready to assist you in the best possible way.',
+                            'center');
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="businessArea">
+            <div class="topSectionBusinessArea">
+                <div class="testoBusinessArea">
+                    <span class="spanBusinessArea">OUR BUSINESS AREA</span>
+                    <h2 class="titoloBusinessArea"><span id="spanLeft">Excellence in</span><span id="spanRight">Services</span></h2>
+                    <p class="sottoTitolo">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
+                </div>
+
+                <a>SEE ALL</a>
+            </div>
+
+            <div class="bottomSectionBusinessArea">
+
+            </div>
+        </div>
+    
+    </div> 
+
+    <script>
+        bodyGenerator();
+    </script>
 </body>
 </html>

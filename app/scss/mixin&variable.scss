@@ -1,0 +1,89 @@
+
+//...header...
+
+$color-primary: rgb(5, 130, 131);
+$light-color-primary: #00a6a6;
+$dark-color-primary: rgb(33, 51, 62); 
+$white-color: white;
+$light-test-color:lightgrey;
+$background-color:#c6e9e9;
+
+@mixin displayColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin displayRow{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin testoEvidenziato{
+    color:$light-color-primary;
+    background-color:$background-color;
+}
+
+@mixin headerTop{
+    margin: 55px; 
+    a{
+     color: $light-test-color;
+     text-decoration: none;
+     margin: 15px;
+    }
+}
+
+@mixin btn{
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+@mixin btnAzzurro{
+    @include btn;
+    border: 0px;
+    background-color:$color-primary;
+    color: $white-color;
+}
+
+//....Slider....
+
+@mixin btnSelezioneSliders{  
+    margin-bottom: 5px;
+    height: 35px;
+    width: 10px;
+    border-radius: 10px;
+    border: 1px solid $color-primary;
+    background-color: transparent;
+    margin: 7.5px;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+@mixin btnSelezioneSlidersFocus{
+    background-color:$color-primary ;
+}
+
+@mixin btnSlider{
+
+    .btnSlider1{
+        @include btnAzzurro;
+    }
+    .btnSlider2{
+        @include btn;
+        background-color: $white-color;
+        border: 1px solid $color-primary; 
+        color: $color-primary;
+    }
+}
+
+@mixin divSliders{
+    width: 100%;
+    display: flex;
+    text-align: left;
+
+    .divTest{
+        width: 50%;
+        @include btnSlider();
+    }
+}
